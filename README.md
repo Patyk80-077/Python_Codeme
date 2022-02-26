@@ -1,3 +1,3 @@
-"# Python_Codeme" 
+# Python Codeme 
 Repozytorium kursu Codeme
-01 Intro
+- 01 Intro
