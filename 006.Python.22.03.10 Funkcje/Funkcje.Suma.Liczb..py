@@ -2,9 +2,11 @@
 from typing import List
 
 
-def sum_numbers():
-
-list_of_numbers = [1, 2, 6, 7, 9]
-total = sum_numbers(list_of_numbers)
-print(total)
+def sum(numbers):
+    list = [1, 2, 6, 7, 9]
+    total = 0
+    for i in numbers:
+        total += i
+suma=sum((1, 2, 6, 7, 9))
+print(suma)
 
