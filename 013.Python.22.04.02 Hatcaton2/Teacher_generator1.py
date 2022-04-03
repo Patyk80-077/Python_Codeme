@@ -30,6 +30,14 @@ def main():
 
     for i in range(1,counter):
 
+        try:
+            if not students_rating[i].isdigit():
+               raise ValueError('Intcorrect rating')
+        except:
+            with open('blacklist.txt', 'a+') as f:
+                f.write(f'{students_name[i]} {students_surname[i]} --> nieobecnośc na zajeciach. \n Prosimy zgłosić się do wykładowcy.\n')
+                f.write('\n')
+
         if (students_rating[i] != '5'):
             message = f"Hi {students_name[i]} {students_surname [i]},\n\nThis is a reminder that you have number of ({students_missing_task[i]}) tasks left to submit before you can graduate. \n You're current grade is {students_rating[i]} and can increase to {5} if you submit all assignments before the due date.\n\n"
 
